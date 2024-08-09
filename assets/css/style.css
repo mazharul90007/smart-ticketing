@@ -32,8 +32,9 @@
 
 .common-heading {
     color: rgb(3, 7, 18);
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-size: 40px;
+    font-weight: 700;
 }
 
 .brand-color {
@@ -54,4 +55,17 @@
     background: url(../images/banner.png);
     background-repeat: no-repeat;
     background-position: center;
+}
+.card1, .card2{
+    position: relative;
+}
+.card1 img, .card2 img{
+    
+    position: absolute;
+    left: 60%;
+    top: 0;
+    z-index: 999;
+    height: 100%;
+    
+   
 }
