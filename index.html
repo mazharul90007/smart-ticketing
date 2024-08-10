@@ -44,11 +44,12 @@
     </header>
     <main>
         <!-- Coupon part html start -->
-        <section class="container text-center">
+        <section id="coupon-container-area" class="container text-center">
             <h3 class="common-heading my-12">Best offers for you</h3>
-            <div class="card-container flex gap-6">
-                <div class="card1 w-1/2">
-                    <div class="bg-[#febf0f] flex rounded-3xl p-12  justify-between items-center">
+            <div class="coupon-container flex gap-6">
+                <!-- coupon 01 -->
+                <div class="coupon1 w-1/2">
+                    <div class=" coupon-items bg-[#febf0f] flex rounded-3xl p-12  justify-between items-center">
                         <div class="discount text-left">
                             <h3 class="text-4xl font-black">15% OFF</h3>
                             <p class="common-darkParagraph font-medium">On your purchase</p>
@@ -59,12 +60,14 @@
                             <P class="common-lightParagraph">Coupon Code</P>
                         </div>
                     </div>
-                    <img src="assets/images/cupon-devider.png" alt="coupon devider">
+                    <div class="coupon-devider">
+                        <img src="assets/images/cupon-devider.png" alt="coupon devider">
+                    </div>
                 </div>
 
-
-                <div class="card2 w-1/2">
-                    <div class="bg-[#f78d9c] flex rounded-3xl p-12  justify-between items-center">
+                <!-- coupon 02 -->
+                <div class="coupon2 w-1/2">
+                    <div class=" coupon-items bg-[#f78d9c] flex rounded-3xl p-12  justify-between items-center">
                         <div class="discount text-left">
                             <h3 class="text-4xl font-black">20% OFF</h3>
                             <p class="common-darkParagraph font-medium">On your purchase</p>
@@ -75,7 +78,9 @@
                             <P class="common-lightParagraph">Coupon Code</P>
                         </div>
                     </div>
-                    <img src="assets/images/cupon-devider.png" alt="coupon devider">
+                    <div class="coupon-devider">
+                        <img src="assets/images/cupon-devider.png" alt="coupon devider">
+                    </div>
                 </div>
             </div>
             <button class="brand-color border border-[#1ad100] my-12 py-3 px-5 rounded-2xl">See All offers</button>
@@ -94,7 +99,7 @@
                 <div class="routeAndPrice flex justify-between items-center gap-28 bg-[#ffffff] rounded-3xl p-8 relative">
                     <div class="route w-4/5">
                         <!-- heading part -->
-                        <div class="flex justify-between mb-6">
+                        <div class="busNameAndSeat flex justify-between mb-6">
                             <div class="bus-name flex gap-2 items-center">
                                 <img src="assets/images/bus-logo.png" alt="bus logo">
                                 <div class="name">
@@ -119,7 +124,7 @@
                                     <p class="common-lightParagraph">Departure Time</p>
                                     <p>9:00 PM</p>
                                 </div>
-                                <div class="grid grid-cols-3 gap-3 text-center pt-4">
+                                <div class="destination grid grid-cols-3 gap-3 text-center pt-4">
                                     <p class="bg-[#eaebec] px-5 py-3 rounded-xl">Boarding Point - Laxmipur</p>
                                     <p class="bg-[#eaebec] px-5 py-3 rounded-xl">Dropping Point - Bogura</p>
                                     <p class="bg-[#eaebec] px-5 py-3 rounded-xl">Est. Time - 11 Hour</p>

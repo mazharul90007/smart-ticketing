@@ -55,17 +55,21 @@
     background: url(../images/banner.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
-.card1, .card2{
+
+.coupon1, .coupon2{
     position: relative;
 }
-.card1 img, .card2 img{
+.coupon-devider{
     
     position: absolute;
     left: 60%;
+    height: 100%;
     top: 0;
     z-index: 999;
     height: 100%;
-    
-   
+}
+.coupon-devider img{
+    height: 100%;
 }

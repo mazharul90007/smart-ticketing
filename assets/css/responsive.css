@@ -1,0 +1,72 @@
+@media screen and (max-width: 600px) {
+    /* common css style */
+    .common-heading{
+        font-size: 2rem;
+    }
+    .common-lightParagraph {
+        font-size: 1rem;
+    }
+    
+    .common-darkParagraph {
+        font-size: 1rem;
+    }
+    /* banner part css start */
+    .banner-items{
+        padding: 0;
+    }
+    .banner-items h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+        padding-top: 1rem;
+    }
+    .banner-items button{
+        font-size: 1rem;
+        padding: 14px 16px;
+        margin-bottom: 16px;
+    }
+
+    /* coupon part css start */
+    #coupon-container-area h3{
+        margin: 2rem 0;
+    }
+    .coupon-container{
+        flex-direction: column;
+    }
+    .coupon1, .coupon2{
+        width: 100%;
+    }
+    .coupon-devider{
+        left: 55%;
+    }
+    .coupon-devider img{
+        width: auto
+    }
+    .coupon h4{
+        font-size: 1.5rem;
+    }
+    .coupon-items{
+        padding: 1rem;
+    }
+
+    /* ticket booking part css start */
+    .ticket-heading{
+        padding: 0 1rem ;
+    }
+    .ticket-heading p{
+        margin: 1rem 0;
+    }
+    .routeAndPrice, .busNameAndSeat{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .route, .price{
+        width: 100%;
+    }
+    .destination{
+        grid-template-columns: 1fr;
+    }
+    .info-devider{
+        display: none;
+    }
+
+}
