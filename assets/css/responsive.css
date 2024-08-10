@@ -69,4 +69,37 @@
         display: none;
     }
 
+    /* bus seat part css start */
+    .seat{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .seat-details-area{
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+    .total-price-area{
+        width: 100%;
+        padding: 0;
+    }
+    .seat-row, .seat-column{
+        /* padding: 16px 40px; */
+        height: 50px;
+        width: 70px;
+    }
+    .seat-left, .seat-right{
+        gap: 5px;
+    }
+    .total-seat{
+        gap: 5px;
+    }
+    .seat-row{
+        padding: 0;
+        height: 50px;
+        width: 70px;
+    }
+
+
+
 }

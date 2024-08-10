@@ -88,7 +88,7 @@
         <!-- Coupon part html end -->
 
         <!-- ticket booking part html start -->
-        <section class="border-t-2 border-[#1ad100] rounded-t-[88px] bg-[#f7f8f8]">
+        <section class="border-t-2 border-[#1ad100] rounded-t-[88px] bg-[#f7f8f8] pb-20">
             <div class="ticket-booking container">
                 <div class="ticket-heading flex flex-col items-center text-center px-20 my-12">
                     <h3 class="common-heading">Anika Paribahan</h3>
@@ -96,7 +96,8 @@
                         within the app. The integrated testing features allow for a streamlined .</p>
                 </div>
                 <!-- bus route and price part html part start -->
-                <div class="routeAndPrice flex justify-between items-center gap-28 bg-[#ffffff] rounded-3xl p-8 relative">
+                <div
+                    class="routeAndPrice flex justify-between items-center gap-28 bg-[#ffffff] rounded-3xl p-8 relative">
                     <div class="route w-4/5">
                         <!-- heading part -->
                         <div class="busNameAndSeat flex justify-between mb-6">
@@ -143,9 +144,144 @@
                     </div>
                 </div>
                 <!-- bus route part html part end -->
+                <!-- bus seat part html part start -->
+                <div class="seat bg-[#ffffff] flex mt-6 p-8 rounded-3xl">
+                    <div class="seat-details-area w-3/5 border-r-2 border-dashed border-[#e5e6e7] pr-8">
+                        <h4 class="text-2xl font-semibold font-Raleway pb-4 border-b border-dashed border-[#e5e6e7]">Select Your Seat</h4>
+                        <div class="availableAndSelectedSeat flex justify-between py-4 mb-4 border-b border-dashed border-[#e5e6e7]">
+                            <div class="available-seat flex gap-3">
+                                <img src="assets/images/seat-gray.png" alt="">
+                                <p class="common-lightParagraph">Available</p>
+                            </div>
+                            <div class="selected flex gap-3">
+                                <img src="assets/images/seat-green-filled.png" alt="">
+                                <p class="common-lightParagraph brand-color">Selected</p>
+                            </div>
+
+                        </div>
+                        <div class="driver-seat flex justify-end">
+                            <div class="driver bg-[#e5e6e7] inline-block rounded-xl">
+                                <img src="assets/images/steering.png" alt="">
+                            </div>
+                        </div>
+                        <!-- bus seat plan -->
+                        <div class="seat-plan flex gap-4 justify-between mt-4">
+                            <div class="seat-row-list grid grid-cols-1 gap-4">
+                                <div class="seat-row">A</div>
+                                <div class="seat-row">B</div>
+                                <div class="seat-row">C</div>
+                                <div class="seat-row">D</div>
+                                <div class="seat-row">E</div>
+                                <div class="seat-row">F</div>
+                                <div class="seat-row">G</div>
+                                <div class="seat-row">H</div>
+                                <div class="seat-row">I</div>
+                                <div class="seat-row">J</div>
+                            </div>
+                            <div class="total-seat flex gap-8">
+                                <div class="seat-left grid grid-cols-2 gap-4">
+                                    <div class="seat-column">A1</div>
+                                    <div class="seat-column">A2</div>
+                                    <div class="seat-column">B1</div>
+                                    <div class="seat-column">B2</div>
+                                    <div class="seat-column">C1</div>
+                                    <div class="seat-column">C2</div>
+                                    <div class="seat-column">D1</div>
+                                    <div class="seat-column">D2</div>
+                                    <div class="seat-column">E1</div>
+                                    <div class="seat-column">E2</div>
+                                    <div class="seat-column">F1</div>
+                                    <div class="seat-column">F2</div>
+                                    <div class="seat-column">G1</div>
+                                    <div class="seat-column">G2</div>
+                                    <div class="seat-column">H1</div>
+                                    <div class="seat-column">H2</div>
+                                    <div class="seat-column">I1</div>
+                                    <div class="seat-column">I2</div>
+                                    <div class="seat-column">J1</div>
+                                    <div class="seat-column">J2</div>
+                                </div>
+                                <div class="seat-right grid grid-cols-2 gap-4">
+                                    <div class="seat-column">A3</div>
+                                    <div class="seat-column">A4</div>
+                                    <div class="seat-column">B3</div>
+                                    <div class="seat-column">B4</div>
+                                    <div class="seat-column">C3</div>
+                                    <div class="seat-column">C4</div>
+                                    <div class="seat-column">D3</div>
+                                    <div class="seat-column">D4</div>
+                                    <div class="seat-column">E3</div>
+                                    <div class="seat-column">E4</div>
+                                    <div class="seat-column">F3</div>
+                                    <div class="seat-column">F4</div>
+                                    <div class="seat-column">G3</div>
+                                    <div class="seat-column">G4</div>
+                                    <div class="seat-column">H3</div>
+                                    <div class="seat-column">H4</div>
+                                    <div class="seat-column">I3</div>
+                                    <div class="seat-column">I4</div>
+                                    <div class="seat-column">J3</div>
+                                    <div class="seat-column">J4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Seat number and total price calculation -->
+                    <div class="total-price-area w-2/5 pl-8">
+                        <h4 class="text-2xl font-semibold font-Raleway pb-4 border-b border-dashed border-[#e5e6e7]">Select Your Seat</h4>
+                        <div class="ticketPriceingArea bg-[#f7f8f8] p-8 mt-4 rounded-3xl">
+                            <ul class="grid grid-cols-3 pb-4 border-b border-dashed border-[#e5e6e7]">
+                                <li>Seat <span id="selected-seat" class="bg-[#1ad100] text-white px-3 rounded-lg">2</span></li>
+                                <li class="text-center">Class</li>
+                                <li class="text-end">Price</li>
+                            </ul>
+                            <div class="seatNumberAndPrice grid grid-cols-3 py-4 border-b-2 border-solid border-[#e5e6e7]">
+                                <ul class="seatNumber">
+                                    <li>C2</li>
+                                    <li>C3</li>
+                                </ul>
+                                <ul class="text-center">
+                                    <li>Economy</li>
+                                    <li>Economy</li>
+                                </ul>
+                                <ul class="text-end">
+                                    <li>550</li>
+                                    <li>550</li>
+                                </ul>
+                            </div>
+                            <ul class="flex justify-between my-4">
+                                <li>Total Price</li>
+                                <li>BDT <span>1100</span></li>
+                            </ul>
+                            <div class="applyCoupon flex justify-between relative w-full mb-4">
+                                <input class="w-full py-4 px-2 rounded-xl" type="text" placeholder="Have any coupon?">
+                                <button class="bg-[#1ad100] text-white absolute right-2 top-2 py-2 px-3 rounded-xl">Apply</button>
+                            </div>
+                            <ul class="flex justify-between">
+                                <li>Grand Total</li>
+                                <li>BDT <span>1100</span></li>
+                            </ul>
+                        </div>
+                        <div class="form flex flex-col gap-3 my-3">
+                            <h5>Passenger Name<sup>*</sup></h5>
+                            <input class="w-full border border-[#e5e6e7] p-4 rounded-xl" type="text" placeholder="Enter your name">
+                            <h5>Phone Number<sup>*</sup></h5>
+                            <input class="w-full border border-[#e5e6e7] p-4 rounded-xl" type="text" placeholder="Enter your phone number">
+                            <h5>Email ID</h5>
+                            <input class="w-full border border-[#e5e6e7] p-4 rounded-xl" type="text" placeholder="Enter your email id">
+                            <button class="bg-[#1ad100] text-white p-4 rounded-xl cursor-pointer">Next</button>
+                            <div class="conditionAndPolicy common-lightParagraph flex justify-between underline">
+                                <p class="cursor-pointer">Terms and Condition</p>
+                                <p class="cursor-pointer">Cancellation Policy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- bus seat part html part end -->
             </div>
+            <!-- ticket booking part html end -->
         </section>
-        <!-- ticket booking part html end -->
+
     </main>
     <footer>
 

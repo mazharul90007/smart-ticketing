@@ -73,3 +73,38 @@
 .coupon-devider img{
     height: 100%;
 }
+
+.driver{
+    height: 50px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e6e7;
+    border-radius: 10px;
+}
+.seat-column{
+    /* padding: 16px 40px; */
+    height: 50px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e6e7;
+    border-radius: 10px;
+
+}
+.seat-row{
+    /* padding: 16px 20px; */
+    height: auto;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seatNumberAndPrice li{
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: rgba(3, 7, 18, 0.6);
+}
