@@ -27,14 +27,14 @@
             <!-- navbar part html end -->
             <!-- banner part html start -->
             <div class="banner">
-                <div class="banner-items text-center pt-[70px] pb-[100px] px-[150px] rounded-[32px]">
-                    <h1 class="text-6xl font-Raleway font-extrabold text-white leading-[86px]">End-to-End Travel with
+                <div class="banner-items text-center md:pt-[70px] md:pb-[100px] px-2 md:px-[150px] pt-4 rounded-[32px]">
+                    <h1 class="text-4xl md:text-6xl font-Raleway font-extrabold text-white">End-to-End Travel with
                         <br>
                         <span class="brand-color">Anika Paribahan</span>
                     </h1>
                     <p class="text-white my-8">Yes, you can run unit tests and view the results directly within the app.
                         The integrated testing features allow for a streamlined .</p>
-                    <a href="#bookSeat"><button class="text-[20px] font-Raleway font-bold py-5 px-8 bg-[#1fd100] rounded-xl">Buy
+                    <a href="#bookSeat"><button class="text-xs md:text-xl font-Raleway font-bold px-4 py-3 md:py-5 md:px-8 mb-4 bg-[#1fd100] rounded-xl">Buy
                         Tickets</button></a>
                 </div>
             </div>
@@ -45,11 +45,11 @@
     <main>
         <!-- Coupon part html start -->
         <section id="coupon-container-area" class="container text-center">
-            <h3 class="common-heading my-12">Best offers for you</h3>
-            <div class="coupon-container flex gap-6">
+            <h3 class="common-heading my-8 md:my-12">Best offers for you</h3>
+            <div class="coupon-container flex flex-col md:flex-row gap-6">
                 <!-- coupon 01 -->
-                <div class="coupon1 w-1/2">
-                    <div class=" coupon-items bg-[#febf0f] flex rounded-3xl p-12  justify-between items-center">
+                <div class="coupon1 w-full md:w-1/2">
+                    <div class=" coupon-items bg-[#febf0f] flex rounded-3xl p-4 md:p-12  justify-between items-center">
                         <div class="discount text-left">
                             <h3 class="text-4xl font-black">15% OFF</h3>
                             <p class="common-darkParagraph font-medium">On your purchase</p>
@@ -61,13 +61,13 @@
                         </div>
                     </div>
                     <div class="coupon-devider">
-                        <img src="assets/images/cupon-devider.png" alt="coupon devider">
+                        <img class="w-auto" src="assets/images/cupon-devider.png" alt="coupon devider">
                     </div>
                 </div>
 
                 <!-- coupon 02 -->
-                <div class="coupon2 w-1/2">
-                    <div class=" coupon-items bg-[#f78d9c] flex rounded-3xl p-12  justify-between items-center">
+                <div class="coupon2 w-full md:w-1/2">
+                    <div class=" coupon-items bg-[#f78d9c] flex rounded-3xl p-4 md:p-12  justify-between items-center">
                         <div class="discount text-left">
                             <h3 class="text-4xl font-black">20% OFF</h3>
                             <p class="common-darkParagraph font-medium">On your purchase</p>
@@ -79,7 +79,7 @@
                         </div>
                     </div>
                     <div class="coupon-devider">
-                        <img src="assets/images/cupon-devider.png" alt="coupon devider">
+                        <img class="w-auto" src="assets/images/cupon-devider.png" alt="coupon devider">
                     </div>
                 </div>
             </div>
@@ -90,17 +90,17 @@
         <!-- ticket booking part html start -->
         <section class="border-t-2 border-[#1ad100] rounded-t-[88px] bg-[#f7f8f8] pb-20">
             <div class="ticket-booking container">
-                <div class="ticket-heading flex flex-col items-center text-center px-20 my-12">
+                <div class="ticket-heading px-4 flex flex-col items-center text-center md:px-20 my-12">
                     <h3 class="common-heading">Anika Paribahan</h3>
-                    <p class="common-lightParagraph my-6">Yes, you can run unit tests and view the results directly
+                    <p class="common-lightParagraph my-4 md:my-6">Yes, you can run unit tests and view the results directly
                         within the app. The integrated testing features allow for a streamlined .</p>
                 </div>
                 <!-- bus route and price part html part start -->
                 <div
-                    class="routeAndPrice flex justify-between items-center gap-28 bg-[#ffffff] rounded-3xl p-8 relative">
-                    <div class="route w-4/5">
+                    class="routeAndPrice flex flex-col md:flex-row gap-4 justify-between items-center md:gap-28 bg-[#ffffff] rounded-3xl p-8 relative">
+                    <div class="route w-full md:w-4/5">
                         <!-- heading part -->
-                        <div class="busNameAndSeat flex justify-between mb-6">
+                        <div class="busNameAndSeat flex flex-col md:flex-row gap-4 justify-between mb-6">
                             <div class="bus-name flex gap-2 items-center">
                                 <img src="assets/images/bus-logo.png" alt="bus logo">
                                 <div class="name">
@@ -125,7 +125,7 @@
                                     <p class="common-lightParagraph">Departure Time</p>
                                     <p>9:00 PM</p>
                                 </div>
-                                <div class="destination grid grid-cols-3 gap-3 text-center pt-4">
+                                <div class="destination grid grid-cols-1 md:grid-cols-3 gap-3 text-center pt-4">
                                     <p class="bg-[#eaebec] px-5 py-3 rounded-xl">Boarding Point - Laxmipur</p>
                                     <p class="bg-[#eaebec] px-5 py-3 rounded-xl">Dropping Point - Bogura</p>
                                     <p class="bg-[#eaebec] px-5 py-3 rounded-xl">Est. Time - 11 Hour</p>
@@ -134,19 +134,20 @@
                         </div>
                     </div>
                     <!-- ticket price part html start -->
-                    <div class="price w-1/5 text-center flex flex-col items-center gap-2">
+                    <div class="price w-full md:w-1/5 text-center flex flex-col items-center gap-2">
                         <img src="assets/images/fare.png" alt="taka">
                         <h4 class="text-4xl font-Raleway font-bold"> <span id="perSeatPrice" class=" font-Raleway">550</span> Taka</h4>
                         <p class="common-lightParagraph">Per Seat</p>
                     </div>
-                    <div class="info-devider absolute h-full right-60">
+                    <div class="info-devider hidden md:block absolute h-full right-60">
                         <img class="h-full" src="assets/images/info-devider.png" alt="">
                     </div>
                 </div>
                 <!-- bus route part html part end -->
                 <!-- bus seat part html part start -->
-                <div id="bookSeat" class="seat bg-[#ffffff] flex mt-6 p-8 rounded-3xl">
-                    <div class="seat-details-area w-3/5 border-r-2 border-dashed border-[#e5e6e7] pr-8">
+                <div id="bookSeat" class="seat bg-[#ffffff] flex flex-col md:flex-row mt-6 p-3 md:p-8 rounded-3xl">
+                    <!-- seat name part -->
+                    <div class="seat-details-area w-full md:w-3/5 md:border-r-2 border-dashed border-[#e5e6e7] md:pr-8">
                         <h4 class="text-2xl font-semibold font-Raleway pb-4 border-b border-dashed border-[#e5e6e7]">Select Your Seat</h4>
                         <div class="availableAndSelectedSeat flex justify-between py-4 mb-4 border-b border-dashed border-[#e5e6e7]">
                             <div class="available-seat flex gap-3">
@@ -178,8 +179,8 @@
                                 <div class="seat-row">I</div>
                                 <div class="seat-row">J</div>
                             </div>
-                            <div class="total-seat flex gap-8">
-                                <div id="seat-left" class="seat-left grid grid-cols-2 gap-4">
+                            <div id="totalSeat" class="total-seat flex gap-2 md:gap-8">
+                                <div id="seat-left" class="seat-left grid grid-cols-2 gap-2 md:gap-4">
                                     <div id="A1" class="seat-column">A1</div>
                                     <div id="A2" class="seat-column">A2</div>
                                     <div id="B1" class="seat-column">B1</div>
@@ -201,7 +202,7 @@
                                     <div id="J1" class="seat-column">J1</div>
                                     <div id="J2" class="seat-column">J2</div>
                                 </div>
-                                <div id="seat-right" class="seat-right grid grid-cols-2 gap-4">
+                                <div id="seat-right" class="seat-right grid grid-cols-2 gap-2 md:gap-4">
                                     <div id="A3" class="seat-column">A3</div>
                                     <div id="A4" class="seat-column">A4</div>
                                     <div id="B3" class="seat-column">B3</div>
@@ -227,7 +228,7 @@
                         </div>
                     </div>
                     <!-- Seat number and total price calculation -->
-                    <div class="total-price-area w-2/5 pl-8">
+                    <div class="total-price-area w-full md:w-2/5 md:pl-8">
                         <h4 class="text-2xl font-semibold font-Raleway pb-4 border-b border-dashed border-[#e5e6e7]">Select Your Seat</h4>
                         <div class="ticketPriceingArea bg-[#f7f8f8] p-8 mt-4 rounded-3xl">
                             <ul class="grid grid-cols-3 pb-4 border-b border-dashed border-[#e5e6e7]">
