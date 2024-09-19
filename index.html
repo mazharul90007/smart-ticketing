@@ -111,7 +111,7 @@
                             </div>
                             <div class="available-seat bg-[#ddf8d9] flex items-center py-4 px-5 rounded-xl">
                                 <img src="assets/images/seat-green.png" alt="seat">
-                                <p class="text-[#1ad100]"> <span>40</span> Seats left</p>
+                                <p class="text-[#1ad100]"> <span id="seatLeft">40</span> Seats left</p>
                             </div>
                         </div>
                         <!-- route part -->
@@ -181,48 +181,48 @@
                             </div>
                             <div id="totalSeat" class="total-seat flex gap-2 md:gap-8">
                                 <div id="seat-left" class="seat-left grid grid-cols-2 gap-2 md:gap-4">
-                                    <div id="A1" class="seat-column">A1</div>
-                                    <div id="A2" class="seat-column">A2</div>
-                                    <div id="B1" class="seat-column">B1</div>
-                                    <div id="B2" class="seat-column">B2</div>
-                                    <div id="C1" class="seat-column">C1</div>
-                                    <div id="C2" class="seat-column">C2</div>
-                                    <div id="D1" class="seat-column">D1</div>
-                                    <div id="D2" class="seat-column">D2</div>
-                                    <div id="E1" class="seat-column">E1</div>
-                                    <div id="E2" class="seat-column">E2</div>
-                                    <div id="F1" class="seat-column">F1</div>
-                                    <div id="F2" class="seat-column">F2</div>
-                                    <div id="G1" class="seat-column">G1</div>
-                                    <div id="G2" class="seat-column">G2</div>
-                                    <div id="H1" class="seat-column">H1</div>
-                                    <div id="H2" class="seat-column">H2</div>
-                                    <div id="I1" class="seat-column">I1</div>
-                                    <div id="I2" class="seat-column">I2</div>
-                                    <div id="J1" class="seat-column">J1</div>
-                                    <div id="J2" class="seat-column">J2</div>
+                                    <div onclick="seat(this)" class="seat-column">A1</div>
+                                    <div class="seat-column">A2</div>
+                                    <div class="seat-column">B1</div>
+                                    <div class="seat-column">B2</div>
+                                    <div class="seat-column">C1</div>
+                                    <div class="seat-column">C2</div>
+                                    <div class="seat-column">D1</div>
+                                    <div class="seat-column">D2</div>
+                                    <div class="seat-column">E1</div>
+                                    <div class="seat-column">E2</div>
+                                    <div class="seat-column">F1</div>
+                                    <div class="seat-column">F2</div>
+                                    <div class="seat-column">G1</div>
+                                    <div class="seat-column">G2</div>
+                                    <div class="seat-column">H1</div>
+                                    <div class="seat-column">H2</div>
+                                    <div class="seat-column">I1</div>
+                                    <div class="seat-column">I2</div>
+                                    <div class="seat-column">J1</div>
+                                    <div class="seat-column">J2</div>
                                 </div>
                                 <div id="seat-right" class="seat-right grid grid-cols-2 gap-2 md:gap-4">
-                                    <div id="A3" class="seat-column">A3</div>
-                                    <div id="A4" class="seat-column">A4</div>
-                                    <div id="B3" class="seat-column">B3</div>
-                                    <div id="B4" class="seat-column">B4</div>
-                                    <div id="C3" class="seat-column">C3</div>
-                                    <div id="C4" class="seat-column">C4</div>
-                                    <div id="D3" class="seat-column">D3</div>
-                                    <div id="D4" class="seat-column">D4</div>
-                                    <div id="E3" class="seat-column">E3</div>
-                                    <div id="E4" class="seat-column">E4</div>
-                                    <div id="F3" class="seat-column">F3</div>
-                                    <div id="F4" class="seat-column">F4</div>
-                                    <div id="G3" class="seat-column">G3</div>
-                                    <div id="G4" class="seat-column">G4</div>
-                                    <div id="H3" class="seat-column">H3</div>
-                                    <div id="H4" class="seat-column">H4</div>
-                                    <div id="I3" class="seat-column">I3</div>
-                                    <div id="I4" class="seat-column">I4</div>
-                                    <div id="J3" class="seat-column">J3</div>
-                                    <div id="J4" class="seat-column">J4</div>
+                                    <div class="seat-column">A3</div>
+                                    <div class="seat-column">A4</div>
+                                    <div class="seat-column">B3</div>
+                                    <div class="seat-column">B4</div>
+                                    <div class="seat-column">C3</div>
+                                    <div class="seat-column">C4</div>
+                                    <div class="seat-column">D3</div>
+                                    <div class="seat-column">D4</div>
+                                    <div class="seat-column">E3</div>
+                                    <div class="seat-column">E4</div>
+                                    <div class="seat-column">F3</div>
+                                    <div class="seat-column">F4</div>
+                                    <div class="seat-column">G3</div>
+                                    <div class="seat-column">G4</div>
+                                    <div class="seat-column">H3</div>
+                                    <div class="seat-column">H4</div>
+                                    <div class="seat-column">I3</div>
+                                    <div class="seat-column">I4</div>
+                                    <div class="seat-column">J3</div>
+                                    <div class="seat-column">J4</div>
                                 </div>
                             </div>
                         </div>
@@ -231,28 +231,21 @@
                     <div class="total-price-area w-full md:w-2/5 md:pl-8">
                         <h4 class="text-2xl font-semibold font-Raleway pb-4 border-b border-dashed border-[#e5e6e7]">Select Your Seat</h4>
                         <div class="ticketPriceingArea bg-[#f7f8f8] p-8 mt-4 rounded-3xl">
-                            <ul class="grid grid-cols-3 pb-4 border-b border-dashed border-[#e5e6e7]">
-                                <li>Seat <span id="selected-seat" class="bg-[#1ad100] text-white px-3 rounded-lg">0</span></li>
-                                <li class="text-center">Class</li>
-                                <li class="text-end">Price</li>
-                            </ul>
-                            <div class="seatNumberAndPrice grid grid-cols-3 py-4 border-b-2 border-solid border-[#e5e6e7]">
-                                <ul id="seatNumber" class="seatNumber">
-                                    <li>C2</li>
-                                    <li>C3</li>
-                                </ul>
-                                <ul id="text-center" class="text-center">
-                                    <li>Economy</li>
-                                    <li>Economy</li>
-                                </ul>
-                                <ul id="text-end" class="text-end">
-                                    <li class="price">550</li>
-                                    <li class="price">550</li>
-                                </ul>
+                            <div class="grid grid-cols-3 pb-4 border-b border-dashed border-[#e5e6e7] text-center">
+                                <div>Seat <span id="selected-seat" class="bg-[#1ad100] text-white px-3 rounded-lg">0</span></div>
+                                <div>Class</div>
+                                <div>Price</div>
+                            </div>
+                            <div id="seatNumberAndPrice" class="w-full py-4 border-b-2 border-solid border-[#e5e6e7]">
+                                <!-- <div class="grid grid-cols-3 text-center">
+                                    <div>C2</div>
+                                    <div>Economy</div>
+                                    <div>500</div>
+                                </div> -->
                             </div>
                             <ul class="flex justify-between my-4">
                                 <li>Total Price</li>
-                                <li>BDT <span id="totalTicketPrice">1100</span></li>
+                                <li>BDT <span id="totalTicketPrice">0</span></li>
                             </ul>
                             <div class="applyCoupon flex justify-between relative w-full mb-4">
                                 <input id="coupon" class="w-full py-4 px-2 rounded-xl" type="text" placeholder="Have any coupon?">
