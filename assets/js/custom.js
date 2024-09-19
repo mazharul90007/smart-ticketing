@@ -14,22 +14,8 @@ seat.forEach(function (event) {
             const selectedSeat = document.getElementById("selected-seat");
             const totalSeatText = selectedSeat.innerText;
             const totalSeatNumber = parseInt(totalSeatText);
-            totalSeat = totalSeatNumber - 1;
+            const totalSeat = totalSeatNumber - 1;
             setElementValueById("selected-seat", totalSeat);
-
-            // remove seat when unselected
-            // const seatNameLi = document.querySelectorAll("#seatNumber li");
-            // seatNameLi.forEach(function (event) {
-            //     const seatName = event.className;
-            //     if (seatName === element) {
-            //         const getSelectedSeat = document.querySelector(".seatName");
-            //         console.log(getSelectedSeat);
-            //     }
-            // })
-
-
-
-
 
         }
         else {
@@ -83,6 +69,31 @@ seat.forEach(function (event) {
         const setTotalPriceById = document.getElementById("totalTicketPrice");
         setTotalPriceById.innerText = totalPrice;
 
+            // get the coupon input field
+            const couponId = document.getElementById("coupon");
+            const coupon = couponId.value;
+            
+            // get 20% coupon
+            
+            // set the value of total ticket price after discount
+            const discountPriceId = document.getElementById("discountPrice");
+            if(coupon === "NEW15"){
+                const lessDiscount = (totalPrice / 100) * 15;
+                console.log(lessDiscount);
+                return lessDiscount;
+            }else{
+                return "no discount";
+            }
+            
+       
+        const couponButton = document.getElementById("getDiscount");
+        const d = couponButton.addEventListener("click", function(){
+         discount();
+        });
+        console.log(d);
+
     })
 })
+
+
 
