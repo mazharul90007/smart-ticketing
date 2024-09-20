@@ -1,5 +1,8 @@
 
 
+
+
+
 document.getElementById('totalSeat').addEventListener("click", (event) => {
     const seat = event.target;
     const seatName = seat.innerText;
@@ -23,6 +26,7 @@ document.getElementById('totalSeat').addEventListener("click", (event) => {
     const totalPriceText = totalPriceId.innerText;
     const totalPriceNumber = parseInt(totalPriceText);
 
+
     if (seat.classList.contains("active")) {
         seat.classList.remove("active");
         seat.classList.remove("bg-green-500")
@@ -38,7 +42,7 @@ document.getElementById('totalSeat').addEventListener("click", (event) => {
         //increase seats left
         const seatLeft = totalSeatLeftNumber + 1;
         totalSeatLeftId.innerText = seatLeft;
-        
+
         //decrease total price
         const totalPrice = totalPriceNumber - perSeatPriceNumber;
         totalPriceId.innerText = totalPrice;
@@ -81,15 +85,44 @@ document.getElementById('totalSeat').addEventListener("click", (event) => {
         // increase total price
         const totalPrice = totalPriceNumber + perSeatPriceNumber;
         totalPriceId.innerText = totalPrice;
+        //
 
 
+
+
+    }
+    const applyButtonId = document.getElementById('getDiscount');
+    if (totalSelectedSeatNumber >= 3) {
+        applyButtonId.removeAttribute("disabled");
+        applyButtonId.classList.remove("opacity-50")
+        console.log(applyButtonId)
+
+        //get coupun input value
+        document.getElementById('coupon').addEventListener("keyup", (event) => {
+            const couponText = event.target.value;
+            applyButtonId.addEventListener("click", () => {
+                if (couponText === "NEW15") {
+                    //get Grand total price
+                    const grandTotalPriceId = document.getElementById("discountPrice");
+                    const GrandTotalPriceText = grandTotalPriceId.innerText;
+                    const GrandTotalPriceNumber = parseInt(GrandTotalPriceText);
+                    grandTotalPriceId.innerText = totalPriceNumber * .15;
+                }
+            })
+        })
+    }
+    else {
+        applyButtonId.setAttribute("disabled", true);
+        applyButtonId.classList.add("opacity-50")
+        console.log(applyButtonId);
     }
 
 
 
 
-
 })
+
+
 
 
 
